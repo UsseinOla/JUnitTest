@@ -9,36 +9,33 @@ package d_unittesr;
  *
  * @author User
  */
-public class D_UnitTesr {
+public class D_UnitTesr 
+{
+public double squareArea(double a)
+{
+double area=a*a;
+return area;
+}
 
- public double squareArea(double a)
- {
- double area=a*a;
- return area;
- }
- 
  public double subtractTech(double num1, double num2)
  {
  double subtraction=num1-num2;
-
-  return subtraction;
+ return subtraction;
  }
  
- 
- 
- public String truncateAInFirst2Positions(String str) {
+ public String truncateAInFirst2Positions(String str) 
+ {
 		if (str.length() <= 2)
-			return str.replaceAll("A", "");
+		return str.replaceAll("A", "");
 
 		String first2Chars = str.substring(0, 2);
 		String stringMinusFirst2Chars = str.substring(2);
 
-		return first2Chars.replaceAll("A", "") 
-				+ stringMinusFirst2Chars;
+		return first2Chars.replaceAll("A", "") + stringMinusFirst2Chars;
 	}
 
-	public boolean areFirstAndLastTwoCharactersTheSame(String str) {
-
+	public boolean areFirstAndLastTwoCharactersTheSame(String str)
+	{
 		if (str.length() <= 1)
 			return false;
 		if (str.length() == 2)
@@ -50,9 +47,4 @@ public class D_UnitTesr {
 
 		return first2Chars.equals(last2Chars);
 	}
- 
- 
-
- 
-    
 }
